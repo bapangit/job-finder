@@ -1,0 +1,25 @@
+$nav-bar-height: 40px;
+.Bar {
+  height: $nav-bar-height;
+  background-color: #2a3647;
+}
+.Body {
+  .SideBar {
+    height: calc(100vh - $nav-bar-height);
+    background-color: cyan;
+    transition: all 0.5s ease-out;
+    .Show {
+      width: 120px;
+    }
+    .Hide {
+      width: 0px;
+    }
+  }
+
+  .SideBar_Hide {
+    width: 0px;
+  }
+
+  .Main {
+  }
+}
