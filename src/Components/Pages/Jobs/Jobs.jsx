@@ -4,7 +4,6 @@ import { ToastContext } from "Components/Toast/ToastContext";
 import axios from "axios";
 import { useContext, useEffect, useState } from "react";
 import styled from "styled-components";
-import { getJobs } from "utils/Service/ApiMethods";
 
 const Container = styled.div`
   display: grid;

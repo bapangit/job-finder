@@ -7,9 +7,6 @@ import ErrorBoundary from "Components/ErrorBoundary/ErrorBoundary";
 import { BrowserRouter as Router } from "react-router-dom";
 import { UserContextProvider } from "Components/Contexts/UserContext";
 import { ToastProvider } from "Components/Toast/ToastContext";
-import { GoogleOAuthProvider } from "@react-oauth/google";
-const client_id =
-  "718284888420-mh70g3sj7buqjmr0p42gl30dklqklb18.apps.googleusercontent.com";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -18,9 +15,7 @@ root.render(
       <UserContextProvider>
         <ToastProvider>
           <Router>
-            <GoogleOAuthProvider clientId={client_id}>
-              <App />
-            </GoogleOAuthProvider>
+            <App />
           </Router>
         </ToastProvider>
       </UserContextProvider>

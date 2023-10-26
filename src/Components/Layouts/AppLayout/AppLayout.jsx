@@ -1,12 +1,9 @@
-import { useContext, useEffect, useState } from "react";
-import Styles from "./AppLayout.module.scss";
-import classNames from "classnames";
+import { useState } from "react";
 import styled, { css } from "styled-components";
 import { HiOutlineMenu } from "react-icons/hi";
 import { AiOutlineClose } from "react-icons/ai";
 import options from "utils/paths";
 import { Outlet, useNavigate } from "react-router-dom";
-import Button from "Components/Buttons/Button";
 
 const Layout = styled.div`
   height: 100vh;
